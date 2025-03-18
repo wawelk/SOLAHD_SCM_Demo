@@ -1,0 +1,944 @@
+Name: DataTypes
+Type: FolderType
+Children:
+- Class: DataType
+  Name: UDT_Emerson_PS
+  Id: g=b4b65320ca18448e0ad56124a96095d8
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "UDT_Emerson_PS",
+    "DataType": {
+     "IdType": 2,
+     "Id": "b4b65320ca18448e0ad56124a96095d8",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "sProduct_Name",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "sSerial_Number",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "sManf_Lot_Code",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "sManf_Name",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "sModel_Revision",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "sPrimary_Revision",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "sSecondary_Revision",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "bInput_Voltage_Type",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "iDC_On_Cycles_Count",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "iShort_Circuit_Count",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "iOver_Voltage_Count",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "iPower_Boost_Count",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "iInput_Power_Applied_Count",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "iOver_Temp_Count",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "rMax_Output_Voltage",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "rMax_Output_Current",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "rMax_Input_Voltage",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "rMax_Temperature",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "rOutput_Voltage",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "rOutput_Current",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "rInput_Voltage",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "rInternal_Temperature",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "iLED_Status",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "rPresent_OnTime",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "rTotal_OnTime",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "iCurrent_Capacity",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Event_Data",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c6b88b1fe9e15813292e317a86b3cad6",
+       "Namespace": 18
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [3]
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"UDT_Emerson_PS"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: UDT_EventData
+  Id: g=c6b88b1fe9e15813292e317a86b3cad6
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "UDT_EventData",
+    "DataType": {
+     "IdType": 2,
+     "Id": "c6b88b1fe9e15813292e317a86b3cad6",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "iEvent_Code",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "bEvent_Start_Stop",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "rEvent_Timestamp",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"UDT_EventData"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: UDT_Emerson_SCM_HMI
+  Id: g=e644e548bde274798323452a6f615084
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "UDT_Emerson_SCM_HMI",
+    "DataType": {
+     "IdType": 2,
+     "Id": "e644e548bde274798323452a6f615084",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "PS1",
+      "DataType": {
+       "IdType": 2,
+       "Id": "b4b65320ca18448e0ad56124a96095d8",
+       "Namespace": 18
+      }
+     },{
+      "Name": "PS2",
+      "DataType": {
+       "IdType": 2,
+       "Id": "b4b65320ca18448e0ad56124a96095d8",
+       "Namespace": 18
+      }
+     },{
+      "Name": "Alarms",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ad712499d16de9c7b8b0b412cbdf54d3",
+       "Namespace": 18
+      }
+     },{
+      "Name": "sSCM_PartNumber",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "sSCM_Serial_Number",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "sSCM_Manf_Lot_Code",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "sSCM_Manf_Name",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "sSCM_Model_Revision",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "sSCM_Firmware_Revision",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "iSCM_LED_Status",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "rSCM_Ambient_Temp",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "iSCM_Configuration",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "rTotal_Current_Warning_Limit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "rTotal_Current_Critical_Alarm_Limit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "rTime_On_Warning_Limit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "rTime_On_Critical_Alarm_Limit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "rTotal_Output_Current",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "bWrite_Parameters",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bcfgPS1_User_Alarm_EN",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bcfgPS2_User_Alarm_EN",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bPS1_User_Alarm_EN",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bPS2_User_Alarm_EN",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PS1_High_Temp_Limit",
+      "DataType": {
+       "IdType": 2,
+       "Id": "cf36ae8e0f0db70bc9965ecb42bb20b2",
+       "Namespace": 18
+      }
+     },{
+      "Name": "PS2_High_Temp_Limit",
+      "DataType": {
+       "IdType": 2,
+       "Id": "cf36ae8e0f0db70bc9965ecb42bb20b2",
+       "Namespace": 18
+      }
+     },{
+      "Name": "PS1_High_Current_Limit",
+      "DataType": {
+       "IdType": 2,
+       "Id": "cf36ae8e0f0db70bc9965ecb42bb20b2",
+       "Namespace": 18
+      }
+     },{
+      "Name": "PS2_High_Current_Limit",
+      "DataType": {
+       "IdType": 2,
+       "Id": "cf36ae8e0f0db70bc9965ecb42bb20b2",
+       "Namespace": 18
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"UDT_Emerson_SCM_HMI"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: '_049D:SCM_E_EIP_HMS_4721DE5A:I:0'
+  Id: g=d8870f051215d23b1360d59960d43091
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "_049D:SCM_E_EIP_HMS_4721DE5A:I:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "d8870f051215d23b1360d59960d43091",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "ConnectionFaulted",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Data",
+      "DataType": {
+       "Id": 2
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [49]
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"_049D:SCM_E_EIP_HMS_4721DE5A:I:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: UDT_Emerson_Parameter
+  Id: g=cf36ae8e0f0db70bc9965ecb42bb20b2
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "UDT_Emerson_Parameter",
+    "DataType": {
+     "IdType": 2,
+     "Id": "cf36ae8e0f0db70bc9965ecb42bb20b2",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "rInput_Value",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "rStatus_Value",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "bWrite_Parameter",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"UDT_Emerson_Parameter"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: UDT_Emerson_SCM_Control_Data
+  Id: g=200abe03d78ae7ef3b6fe05015b31b48
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "UDT_Emerson_SCM_Control_Data",
+    "DataType": {
+     "IdType": 2,
+     "Id": "200abe03d78ae7ef3b6fe05015b31b48",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "iaControl_Data_Array",
+      "DataType": {
+       "Id": 2
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [367]
+     },{
+      "Name": "iaProcess_Data_Array",
+      "DataType": {
+       "Id": 2
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [50]
+     },{
+      "Name": "bConnectionsFaulted",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Message_Parameter_Write",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c4713f41a89f5af9743a98e5ce14103d",
+       "Namespace": 18
+      }
+     },{
+      "Name": "Message_Parameter_Read",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c4713f41a89f5af9743a98e5ce14103d",
+       "Namespace": 18
+      }
+     },{
+      "Name": "Message_Initialize",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c4713f41a89f5af9743a98e5ce14103d",
+       "Namespace": 18
+      }
+     },{
+      "Name": "Message_PS1_Cyclic",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c4713f41a89f5af9743a98e5ce14103d",
+       "Namespace": 18
+      }
+     },{
+      "Name": "Message_PS1_Event",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c4713f41a89f5af9743a98e5ce14103d",
+       "Namespace": 18
+      }
+     },{
+      "Name": "Message_PS2_Cyclic",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c4713f41a89f5af9743a98e5ce14103d",
+       "Namespace": 18
+      }
+     },{
+      "Name": "Message_PS2_Event",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c4713f41a89f5af9743a98e5ce14103d",
+       "Namespace": 18
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"UDT_Emerson_SCM_Control_Data"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: UDT_Emerson_Message
+  Id: g=c4713f41a89f5af9743a98e5ce14103d
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "UDT_Emerson_Message",
+    "DataType": {
+     "IdType": 2,
+     "Id": "c4713f41a89f5af9743a98e5ce14103d",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "bTrigger",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ctuStep",
+      "DataType": {
+       "IdType": 2,
+       "Id": "f20bb793ab3cef9166d3b72ce7b7b3b4",
+       "Namespace": 18
+      }
+     },{
+      "Name": "iInstance_Number",
+      "DataType": {
+       "Id": 4
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"UDT_Emerson_Message"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: UDT_Emerson_SCM_Alarms
+  Id: g=ad712499d16de9c7b8b0b412cbdf54d3
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "UDT_Emerson_SCM_Alarms",
+    "DataType": {
+     "IdType": 2,
+     "Id": "ad712499d16de9c7b8b0b412cbdf54d3",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "iPS1_Event_Flag",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "iPS2_Event_Flag",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "bPS1_Temp_Alarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bPS2_Temp_Alarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bPS1_Current_Alarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bPS2_Current_Alarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bSCM_Total_Current_Warning",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bSCM_Total_Current_Critical",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bPS1_Total_OnTime_Warning",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bPS1_Total_OnTime_Critical",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bPS1_Current_Trend_Alarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bPS1_Temp_Trend_Alarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bPS2_Total_OnTime_Warning",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bPS2_Total_OnTime_Critical",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bPS2_Current_Trend_Alarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bPS2_Temp_Trend_Alarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bSCM_Comm_Failure",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "bSCM_Current_Ratio_Alarm",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"UDT_Emerson_SCM_Alarms"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: TIMER
+  Id: g=06552cf70fd8d8cdc7fabed618fcd193
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "TIMER",
+    "DataType": {
+     "IdType": 2,
+     "Id": "06552cf70fd8d8cdc7fabed618fcd193",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "PRE",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ACC",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "EN",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "TT",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DN",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"TIMER"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: COUNTER
+  Id: g=f20bb793ab3cef9166d3b72ce7b7b3b4
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "COUNTER",
+    "DataType": {
+     "IdType": 2,
+     "Id": "f20bb793ab3cef9166d3b72ce7b7b3b4",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "PRE",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ACC",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "CU",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "CD",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DN",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OV",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "UN",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"COUNTER"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: MESSAGE
+  Id: g=abef70dd9788796094864e5d080ec1b0
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "MESSAGE",
+    "DataType": {
+     "IdType": 2,
+     "Id": "abef70dd9788796094864e5d080ec1b0",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "Flags",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "EW",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ER",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DN",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ST",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EN",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "TO",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EN_CC",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ERR",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "EXERR",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ERR_SRC",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "DN_LEN",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "REQ_LEN",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "DestinationLink",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "DestinationNode",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "SourceLink",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Class",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Attribute",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Instance",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "LocalIndex",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Channel",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "Rack",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "Group",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "Slot",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "Path",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "RemoteIndex",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "RemoteElement",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "UnconnectedTimeout",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ConnectionRate",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "TimeoutMultiplier",
+      "DataType": {
+       "Id": 2
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"MESSAGE"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
