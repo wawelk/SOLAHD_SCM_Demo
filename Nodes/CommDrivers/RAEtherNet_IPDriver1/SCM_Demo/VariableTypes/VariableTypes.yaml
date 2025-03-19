@@ -305,6 +305,30 @@ Children:
           Type: BaseDataVariableType
           DataType: String
           Value: "rEvent_Timestamp"
+    - Name: iEvent_Code
+      Type: RAEtherNetIPTag
+      DataType: SByte
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "iEvent_Code"
+    - Name: bEvent_Start_Stop
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "bEvent_Start_Stop"
+    - Name: rEvent_Timestamp
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "rEvent_Timestamp"
 - Name: UDT_EventData
   Id: g=71a30b5007a3825797a2b8b242e69192
   Supertype: TagStructure
@@ -643,6 +667,30 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             Value: "rEvent_Timestamp"
+      - Name: iEvent_Code
+        Type: RAEtherNetIPTag
+        DataType: SByte
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "iEvent_Code"
+      - Name: bEvent_Start_Stop
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "bEvent_Start_Stop"
+      - Name: rEvent_Timestamp
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "rEvent_Timestamp"
   - Name: PS2
     Type: UDT_Emerson_PS
     DataType: UDT_Emerson_PS
@@ -945,6 +993,30 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             Value: "rEvent_Timestamp"
+      - Name: iEvent_Code
+        Type: RAEtherNetIPTag
+        DataType: SByte
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "iEvent_Code"
+      - Name: bEvent_Start_Stop
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "bEvent_Start_Stop"
+      - Name: rEvent_Timestamp
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "rEvent_Timestamp"
   - Name: Alarms
     Type: UDT_Emerson_SCM_Alarms
     DataType: UDT_Emerson_SCM_Alarms
