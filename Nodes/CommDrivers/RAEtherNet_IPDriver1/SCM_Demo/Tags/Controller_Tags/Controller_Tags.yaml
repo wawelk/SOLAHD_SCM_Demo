@@ -1625,6 +1625,7 @@ Children:
         DataType: String
         Value: "SCM1_HMI.PS1_High_Temp_Limit.rStatus_Value"
     - Name: bWrite_Parameter
+      Id: g=6b4987479ac41df9f86ef0214775ad20
       Type: RAEtherNetIPTag
       DataType: Boolean
       Children:
@@ -1653,6 +1654,7 @@ Children:
         DataType: String
         Value: "SCM1_HMI.PS2_High_Temp_Limit.rStatus_Value"
     - Name: bWrite_Parameter
+      Id: g=664d3e13b88c197b3cf8243fda8baa30
       Type: RAEtherNetIPTag
       DataType: Boolean
       Children:
@@ -1681,6 +1683,7 @@ Children:
         DataType: String
         Value: "SCM1_HMI.PS1_High_Current_Limit.rStatus_Value"
     - Name: bWrite_Parameter
+      Id: g=e52140299b3a7b51a9a0ac5a8a17cf3a
       Type: RAEtherNetIPTag
       DataType: Boolean
       Children:
@@ -1709,6 +1712,7 @@ Children:
         DataType: String
         Value: "SCM1_HMI.PS2_High_Current_Limit.rStatus_Value"
     - Name: bWrite_Parameter
+      Id: g=6100a267ffdb0cdf36aea862bfcd21bf
       Type: RAEtherNetIPTag
       DataType: Boolean
       Children:
