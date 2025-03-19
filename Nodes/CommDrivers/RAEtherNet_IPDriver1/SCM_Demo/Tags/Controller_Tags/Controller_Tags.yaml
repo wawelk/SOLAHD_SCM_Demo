@@ -1523,6 +1523,7 @@ Children:
       DataType: String
       Value: "SCM1_HMI.bWrite_Parameters"
   - Name: bcfgPS1_User_Alarm_EN
+    Id: g=6a1b7e3dd7695e75d8f7388669dd4fe5
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
@@ -1531,6 +1532,7 @@ Children:
       DataType: String
       Value: "SCM1_HMI.bcfgPS1_User_Alarm_EN"
   - Name: bcfgPS2_User_Alarm_EN
+    Id: g=1be6cbb21a24d6ff7fb6200b96e3505d
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
