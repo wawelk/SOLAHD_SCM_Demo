@@ -4998,7 +4998,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 521.0
+      Value: 520.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -5042,7 +5042,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/SOLAHD_SCM_Demo/CommDrivers/RAEtherNet_IPDriver1/SCM_Demo/Tags/Controller Tags/SCM1_HMI/PS2/rTotal_OnTime"
+            Value: "/Objects/SOLAHD_SCM_Demo/CommDrivers/RAEtherNet_IPDriver1/SCM_Demo/Tags/Controller Tags/SCM1_HMI/PS2/rPresent_OnTime"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
